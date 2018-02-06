@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="quiz_description">DotA 2 to jedna z najbardziej popularnych gier typu MOBA na świecie. Ten krótki quiz ma na celu sprawdzić twoją wiedzę o podstawach gry DotA. Czy jesteś gotowy do bitwy? Przekonajmy się!</string>
+    <string name="name_question">Jak masz na imię?</string>
+    <string name="name_hint">Podaj swoje imię...</string>
+    <string name="question_1">Pytanie 1</string>
+    <string name="question_1_text">Co oznacza skrót DotA?</string>
+    <string name="question_2">Pytanie 2</string>
+    <string name="question_3">Pytanie 3</string>
+    <string name="question_4">Pytanie 4</string>
+    <string name="question_5">Pytanie 5</string>
+    <string name="question_6">Pytanie 6</string>
+    <string name="question_7">Pytanie 7</string>
+    <string name="question_8">Pytanie 8</string>
+    <string name="question_2_text">Popularnym modem do której gry była DotA?</string>
+    <string name="question_3_text">Jakie domyślnie nazywają się drużyny walczące przeciwko sobie podczac meczu DotA 2?</string>
+    <string name="question_4_text">Jak nazywa się najwiekszy turniej DotA 2?</string>
+    <string name="question_5_text">Jak ksywę nosi tajemniczy developer gry DotA 2?</string>
+    <string name="question_6_text">Która firma odpowiada za development i publikowanie gry DotA 2?</string>
+    <string name="question_7_text">Jak nazywa się ten bohater?</string>
+    <string name="question_8_text">Jak nazywa się ten przedmiot?</string>
+    <string name="submit_answers">Sprawdź odpowiedzi</string>
+    <string name="summary_message">Gratulacje %s! Twój wynik to: %d/%d punktów.</string>
+    <string name="advice_1">Lepiej się poucz, przeciwnicy są silni!</string>
+    <string name="advice_2">Bądź ostrożny, jeszcze dużo nauki przed tobą!</string>
+    <string name="advice_3">Jesteś gotów do bitwy, ale wciąż jest czego się uczyć!</string>
+    <string name="advice_4">Jesteś prawdziwym bohaterem, przeciwnicy powinni sie Ciebie obawiać!</string>
+</resources>

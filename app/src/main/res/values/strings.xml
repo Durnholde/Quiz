@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name" translatable="false">Quiz</string>
+
+    <string name="title" translatable="false">DotA 2 - Quiz</string>
+    <string name="quiz_description">DotA 2 is very popular MOBA game, played worldwide by millions of players. This short quiz will verify your knowledge about basics of DotA. Are you ready to battle? Let\'s find out!</string>
+    <string name="name_question">What is your name?</string>
+    <string name="name_hint">Click to enter your name...</string>
+
+    <string name="question_1">Question 1</string>
+    <string name="question_1_text">What does the abbreviation DotA stand for?</string>
+    <string name="question_1_correct" translatable="false">Defense of the Ancients</string>
+    <string name="question_1_wrong_1" translatable="false">Debugging of the Application</string>
+    <string name="question_1_wrong_2" translatable="false">Destiny of the Alliance</string>
+
+    <string name="question_2">Question 2</string>
+    <string name="question_2_text">For which game DotA was a popular mod?</string>
+    <string name="question_2_correct" translatable="false">Warcraft 3</string>
+    <string name="question_2_wrong_1" translatable="false">Starcraft 2</string>
+    <string name="question_2_wrong_2" translatable="false">League of Legends</string>
+
+    <string name="question_3">Question 3</string>
+    <string name="question_3_text">What are the default names of the teams fighting against each other during game of DotA 2?</string>
+    <string name="question_3_correct" translatable="false">Radiant and Dire</string>
+    <string name="question_3_wrong_1" translatable="false">Light and Dark</string>
+    <string name="question_3_wrong_2" translatable="false">Solar and Lunar</string>
+
+    <string name="question_4">Question 4</string>
+    <string name="question_4_text">What is the name of the biggest DotA 2 e-sport event?</string>
+    <string name="question_4_correct" translatable="false">The International</string>
+    <string name="question_4_wrong_1" translatable="false">The Championships</string>
+    <string name="question_4_wrong_2" translatable="false">World Finals</string>
+
+    <string name="question_5">Question 5</string>
+    <string name="question_5_text">What is the nickname of mystical DotA 2 designer?</string>
+    <string name="question_5_correct" translatable="false">IceFrog</string>
+    <string name="question_5_wrong_1" translatable="false">FrostToad</string>
+    <string name="question_5_wrong_2" translatable="false">Gaben</string>
+
+    <string name="question_6">Question 6</string>
+    <string name="question_6_text">Which company is the developer and publisher of DotA 2?</string>
+    <string name="question_6_correct" translatable="false">Valve</string>
+    <string name="question_6_wrong_1" translatable="false">Blizzard</string>
+    <string name="question_6_wrong_2" translatable="false">Riot</string>
+
+    <string name="question_7">Question 7</string>
+    <string name="question_7_text">What is the name of this hero?</string>
+    <string name="question_7_correct" translatable="false">Pudge</string>
+    <string name="question_7_wrong_1" translatable="false">Reaper</string>
+    <string name="question_7_wrong_2" translatable="false">Butcher</string>
+
+    <string name="question_8">Question 8</string>
+    <string name="question_8_text">What is the name of this item?</string>
+    <string name="question_8_correct" translatable="false">Blink Dagger</string>
+    <string name="question_8_wrong_1" translatable="false">Kinetic Wand</string>
+    <string name="question_8_wrong_2" translatable="false">Broken Blade</string>
+
+    <string name="submit_answers">Submit answers</string>
+
+    <string name="tag_answer_wrong" translatable="false">wrong_answer</string>
+    <string name="tag_answer_correct" translatable="false">correct_answer</string>
+
+    <string name="summary_message">Congratulations %s! Your score: %d/%d points.</string>
+    <string name="advice_1">You better learn more about DotA 2, enemies are strong!</string>
+    <string name="advice_2">Be careful, there are still things to learn!</string>
+    <string name="advice_3">You are ready to battle, but there are still things to learn!</string>
+    <string name="advice_4">You are a true hero, enemies should be afraid!</string>
+</resources>

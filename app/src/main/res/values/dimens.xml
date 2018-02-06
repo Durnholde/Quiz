@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text sizes -->
+    <dimen name="text_size_title">30sp</dimen>
+    <dimen name="text_size_quiz_description">18sp</dimen>
+    <dimen name="text_size_standard">14sp</dimen>
+    <dimen name="text_size_answers">12sp</dimen>
+    <dimen name="text_size_question">12sp</dimen>
+
+    <!-- Margins and padding sizes -->
+    <dimen name="margin_main">10dp</dimen>
+    <dimen name="margin_between_questions">12dp</dimen>
+    <dimen name="image_padding">6dp</dimen>
+</resources>

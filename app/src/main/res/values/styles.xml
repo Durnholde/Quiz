@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:radioButtonStyle">@style/MyButtons</item>
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+    </style>
+
+    <style name="MyButtons" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:buttonTint">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/text_size_answers</item>
+    </style>
+
+</resources>
