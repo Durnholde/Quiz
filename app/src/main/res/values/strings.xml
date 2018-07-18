@@ -20,9 +20,12 @@
 
     <string name="question_3">Question 3</string>
     <string name="question_3_text">What are the default names of the teams fighting against each other during game of DotA 2?</string>
-    <string name="question_3_correct" translatable="false">Radiant and Dire</string>
-    <string name="question_3_wrong_1" translatable="false">Light and Dark</string>
-    <string name="question_3_wrong_2" translatable="false">Solar and Lunar</string>
+    <string name="question_3_correct_1" translatable="false">Radiant</string>
+    <string name="question_3_correct_2" translatable="false">Dire</string>
+    <string name="question_3_wrong_1" translatable="false">Light</string>
+    <string name="question_3_wrong_2" translatable="false">Solar</string>
+    <string name="question_3_wrong_3" translatable="false">Dark</string>
+    <string name="question_3_wrong_4" translatable="false">Lunar</string>
 
     <string name="question_4">Question 4</string>
     <string name="question_4_text">What is the name of the biggest DotA 2 e-sport event?</string>
@@ -44,9 +47,8 @@
 
     <string name="question_7">Question 7</string>
     <string name="question_7_text">What is the name of this hero?</string>
-    <string name="question_7_correct" translatable="false">Pudge</string>
-    <string name="question_7_wrong_1" translatable="false">Reaper</string>
-    <string name="question_7_wrong_2" translatable="false">Butcher</string>
+    <string name="question_7_answer_hint">Enter answer here...</string>
+    <string name="question_7_correct_answer" translatable="false">Pudge</string>
 
     <string name="question_8">Question 8</string>
     <string name="question_8_text">What is the name of this item?</string>

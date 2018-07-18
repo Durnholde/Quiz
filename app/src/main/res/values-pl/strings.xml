@@ -18,6 +18,7 @@
     <string name="question_5_text">Jak ksywę nosi tajemniczy developer gry DotA 2?</string>
     <string name="question_6_text">Która firma odpowiada za development i publikowanie gry DotA 2?</string>
     <string name="question_7_text">Jak nazywa się ten bohater?</string>
+    <string name="question_7_answer_hint">Podaj odpowiedź...</string>
     <string name="question_8_text">Jak nazywa się ten przedmiot?</string>
     <string name="submit_answers">Sprawdź odpowiedzi</string>
     <string name="summary_message">Gratulacje %s! Twój wynik to: %d/%d punktów.</string>

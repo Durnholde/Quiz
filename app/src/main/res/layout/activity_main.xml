@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/background2">
@@ -8,64 +7,64 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="@dimen/margin_main">
+        android:layout_margin="@dimen/margin_main"
+        android:orientation="vertical">
 
         <!-- Title -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/text_size_title"
             android:gravity="center"
-            android:text="@string/title" />
+            android:text="@string/title"
+            android:textSize="@dimen/text_size_title" />
 
         <!-- Description -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="@dimen/margin_between_questions"
-            android:textSize="@dimen/text_size_quiz_description"
             android:text="@string/quiz_description"
-            android:textAlignment="center"/>
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_quiz_description" />
 
         <!-- User name -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/name_question"
-            android:textSize="@dimen/text_size_standard"
             android:layout_marginTop="@dimen/margin_between_questions"
-            android:background="@color/colorTitleBackground"/>
+            android:background="@color/colorTitleBackground"
+            android:text="@string/name_question"
+            android:textSize="@dimen/text_size_standard" />
 
         <!-- User name input -->
         <EditText
+            android:id="@+id/name_box"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/name_box"
-            android:textSize="@dimen/text_size_standard"
+            android:layout_marginBottom="@dimen/margin_between_questions"
+            android:background="@color/colorQuestionBackground"
+            android:hint="@string/name_hint"
             android:inputType="textCapWords"
             android:textColor="@color/colorText"
             android:textColorHint="@color/colorText"
-            android:background="@color/colorQuestionBackground"
-            android:layout_marginBottom="@dimen/margin_between_questions"
-            android:hint="@string/name_hint"/>
+            android:textSize="@dimen/text_size_standard" />
 
         <!-- QUESTION 1 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_marginVertical="@dimen/margin_between_questions"
             android:background="@color/colorQuestionBackground"
-            android:layout_marginVertical="@dimen/margin_between_questions">
+            android:orientation="vertical">
 
             <!-- Header -->
             <TextView
+                android:id="@+id/question_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/question_1"
                 android:background="@color/colorTitleBackground"
-                android:textSize="@dimen/text_size_question"
-                android:text="@string/question_1"/>
+                android:text="@string/question_1"
+                android:textSize="@dimen/text_size_question" />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -74,14 +73,14 @@
                 android:adjustViewBounds="true"
                 android:background="@color/colorTitleBackground"
                 android:padding="@dimen/image_padding"
-                android:src="@drawable/dota2"/>
+                android:src="@drawable/dota2" />
 
             <!-- Question content -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size_standard"
-                android:text="@string/question_1_text"/>
+                android:text="@string/question_1_text"
+                android:textSize="@dimen/text_size_standard" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -91,23 +90,23 @@
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="getAnswer"
                     android:tag="@string/tag_answer_correct"
-                    android:text="@string/question_1_correct"
-                    android:onClick="getAnswer" />
+                    android:text="@string/question_1_correct" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="getAnswer"
                     android:tag="@string/tag_answer_wrong"
-                    android:text="@string/question_1_wrong_1"
-                    android:onClick="getAnswer"/>
+                    android:text="@string/question_1_wrong_1" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="getAnswer"
                     android:tag="@string/tag_answer_wrong"
-                    android:text="@string/question_1_wrong_2"
-                    android:onClick="getAnswer"/>
+                    android:text="@string/question_1_wrong_2" />
             </RadioGroup>
         </LinearLayout>
 
@@ -115,17 +114,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_marginVertical="@dimen/margin_between_questions"
-            android:background="@color/colorQuestionBackground">
+            android:background="@color/colorQuestionBackground"
+            android:orientation="vertical">
 
             <!-- Header -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorTitleBackground"
-                android:textSize="@dimen/text_size_question"
-                android:text="@string/question_2" />
+                android:text="@string/question_2"
+                android:textSize="@dimen/text_size_question" />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -134,14 +133,14 @@
                 android:adjustViewBounds="true"
                 android:background="@color/colorTitleBackground"
                 android:padding="@dimen/image_padding"
-                android:src="@drawable/dota1"/>
+                android:src="@drawable/dota1" />
 
             <!-- Question content -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size_standard"
-                android:text="@string/question_2_text" />
+                android:text="@string/question_2_text"
+                android:textSize="@dimen/text_size_standard" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -151,9 +150,9 @@
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="getAnswer"
                     android:tag="@string/tag_answer_wrong"
-                    android:text="@string/question_2_wrong_1"
-                    android:onClick="getAnswer"/>
+                    android:text="@string/question_2_wrong_1" />
 
                 <RadioButton
                     android:layout_width="match_parent"
@@ -165,9 +164,9 @@
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="getAnswer"
                     android:tag="@string/tag_answer_correct"
-                    android:text="@string/question_2_correct"
-                    android:onClick="getAnswer"/>
+                    android:text="@string/question_2_correct" />
             </RadioGroup>
         </LinearLayout>
 
@@ -175,17 +174,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_marginVertical="@dimen/margin_between_questions"
-            android:background="@color/colorQuestionBackground">
+            android:background="@color/colorQuestionBackground"
+            android:orientation="vertical">
 
             <!-- Header -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorTitleBackground"
-                android:textSize="@dimen/text_size_question"
-                android:text="@string/question_3"/>
+                android:text="@string/question_3"
+                android:textSize="@dimen/text_size_question" />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -194,58 +193,73 @@
                 android:adjustViewBounds="true"
                 android:background="@color/colorTitleBackground"
                 android:padding="@dimen/image_padding"
-                android:src="@drawable/radiantanddire"/>
+                android:src="@drawable/radiantanddire" />
 
             <!-- Question content -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size_standard"
-                android:text="@string/question_3_text"/>
+                android:text="@string/question_3_text"
+                android:textSize="@dimen/text_size_standard" />
 
-            <RadioGroup
+            <CheckBox
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:tag="3">
+                android:onClick="getAnswerCheckbox"
+                android:tag="@string/tag_answer_wrong"
+                android:text="@string/question_3_wrong_1" />
 
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:tag="@string/tag_answer_wrong"
-                    android:text="@string/question_3_wrong_1"
-                    android:onClick="getAnswer"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getAnswerCheckbox"
+                android:tag="@string/tag_answer_correct"
+                android:text="@string/question_3_correct_1" />
 
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:tag="@string/tag_answer_correct"
-                    android:text="@string/question_3_correct"
-                    android:onClick="getAnswer"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getAnswerCheckbox"
+                android:tag="@string/tag_answer_wrong"
+                android:text="@string/question_3_wrong_2" />
 
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:tag="@string/tag_answer_wrong"
-                    android:text="@string/question_3_wrong_2"
-                    android:onClick="getAnswer"/>
-            </RadioGroup>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getAnswerCheckbox"
+                android:tag="@string/tag_answer_correct"
+                android:text="@string/question_3_correct_2" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getAnswerCheckbox"
+                android:tag="@string/tag_answer_wrong"
+                android:text="@string/question_3_wrong_3" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getAnswerCheckbox"
+                android:tag="@string/tag_answer_wrong"
+                android:text="@string/question_3_wrong_4" />
         </LinearLayout>
 
         <!-- QUESTION 4 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_marginVertical="@dimen/margin_between_questions"
-            android:background="@color/colorQuestionBackground">
+            android:background="@color/colorQuestionBackground"
+            android:orientation="vertical">
 
             <!-- Header -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorTitleBackground"
-                android:textSize="@dimen/text_size_question"
-                android:text="@string/question_4"/>
+                android:text="@string/question_4"
+                android:textSize="@dimen/text_size_question" />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -253,14 +267,14 @@
                 android:adjustViewBounds="true"
                 android:background="@color/colorTitleBackground"
                 android:padding="@dimen/image_padding"
-                android:src="@drawable/ti7"/>
+                android:src="@drawable/ti7" />
 
             <!-- Question content -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size_standard"
-                android:text="@string/question_4_text"/>
+                android:text="@string/question_4_text"
+                android:textSize="@dimen/text_size_standard" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -270,23 +284,23 @@
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="getAnswer"
                     android:tag="@string/tag_answer_wrong"
-                    android:text="@string/question_4_wrong_1"
-                    android:onClick="getAnswer"/>
+                    android:text="@string/question_4_wrong_1" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="getAnswer"
                     android:tag="@string/tag_answer_correct"
-                    android:text="@string/question_4_correct"
-                    android:onClick="getAnswer"/>
+                    android:text="@string/question_4_correct" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="getAnswer"
                     android:tag="@string/tag_answer_wrong"
-                    android:text="@string/question_4_wrong_2"
-                    android:onClick="getAnswer"/>
+                    android:text="@string/question_4_wrong_2" />
             </RadioGroup>
         </LinearLayout>
 
@@ -294,17 +308,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_marginVertical="@dimen/margin_between_questions"
-            android:background="@color/colorQuestionBackground">
+            android:background="@color/colorQuestionBackground"
+            android:orientation="vertical">
 
             <!-- Header -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorTitleBackground"
-                android:textSize="@dimen/text_size_question"
-                android:text="@string/question_5"/>
+                android:text="@string/question_5"
+                android:textSize="@dimen/text_size_question" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -313,14 +327,14 @@
                 android:adjustViewBounds="true"
                 android:background="@color/colorTitleBackground"
                 android:padding="@dimen/image_padding"
-                android:src="@drawable/icefrog"/>
+                android:src="@drawable/icefrog" />
 
             <!-- Question content -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size_standard"
-                android:text="@string/question_5_text"/>
+                android:text="@string/question_5_text"
+                android:textSize="@dimen/text_size_standard" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -330,23 +344,23 @@
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="getAnswer"
                     android:tag="@string/tag_answer_correct"
-                    android:text="@string/question_5_correct"
-                    android:onClick="getAnswer"/>
+                    android:text="@string/question_5_correct" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="getAnswer"
                     android:tag="@string/tag_answer_wrong"
-                    android:text="@string/question_5_wrong_1"
-                    android:onClick="getAnswer"/>
+                    android:text="@string/question_5_wrong_1" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="getAnswer"
                     android:tag="@string/tag_answer_wrong"
-                    android:text="@string/question_5_wrong_2"
-                    android:onClick="getAnswer"/>
+                    android:text="@string/question_5_wrong_2" />
             </RadioGroup>
         </LinearLayout>
 
@@ -354,24 +368,24 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_marginVertical="@dimen/margin_between_questions"
-            android:background="@color/colorQuestionBackground">
+            android:background="@color/colorQuestionBackground"
+            android:orientation="vertical">
 
             <!-- Header -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorTitleBackground"
-                android:textSize="@dimen/text_size_question"
-                android:text="@string/question_6"/>
+                android:text="@string/question_6"
+                android:textSize="@dimen/text_size_question" />
 
             <!-- Question content -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size_standard"
-                android:text="@string/question_6_text"/>
+                android:text="@string/question_6_text"
+                android:textSize="@dimen/text_size_standard" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -381,23 +395,23 @@
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="getAnswer"
                     android:tag="@string/tag_answer_wrong"
-                    android:text="@string/question_6_wrong_1"
-                    android:onClick="getAnswer"/>
+                    android:text="@string/question_6_wrong_1" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="getAnswer"
                     android:tag="@string/tag_answer_wrong"
-                    android:text="@string/question_6_wrong_2"
-                    android:onClick="getAnswer"/>
+                    android:text="@string/question_6_wrong_2" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="getAnswer"
                     android:tag="@string/tag_answer_correct"
-                    android:text="@string/question_6_correct"
-                    android:onClick="getAnswer"/>
+                    android:text="@string/question_6_correct" />
             </RadioGroup>
         </LinearLayout>
 
@@ -405,17 +419,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_marginVertical="@dimen/margin_between_questions"
-            android:background="@color/colorQuestionBackground">
+            android:background="@color/colorQuestionBackground"
+            android:orientation="vertical">
 
             <!-- Header -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorTitleBackground"
-                android:textSize="@dimen/text_size_question"
-                android:text="@string/question_7"/>
+                android:text="@string/question_7"
+                android:textSize="@dimen/text_size_question" />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -423,74 +437,58 @@
                 android:adjustViewBounds="true"
                 android:background="@color/colorTitleBackground"
                 android:padding="@dimen/image_padding"
-                android:src="@drawable/pudge"/>
+                android:src="@drawable/pudge" />
 
             <!-- Question content -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size_standard"
-                android:text="@string/question_7_text"/>
+                android:text="@string/question_7_text"
+                android:textSize="@dimen/text_size_standard" />
 
-            <RadioGroup
+            <EditText
+                android:id="@+id/question_7_answer_box"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:tag="7">
-
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:tag="@string/tag_answer_correct"
-                    android:text="@string/question_7_correct"
-                    android:onClick="getAnswer"/>
-
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:tag="@string/tag_answer_wrong"
-                    android:text="@string/question_7_wrong_1"
-                    android:onClick="getAnswer"/>
-
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:tag="@string/tag_answer_wrong"
-                    android:text="@string/question_7_wrong_2"
-                    android:onClick="getAnswer"/>
-            </RadioGroup>
+                android:background="@color/colorQuestionBackground"
+                android:hint="@string/question_7_answer_hint"
+                android:inputType="textCapWords"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorText"
+                android:textSize="@dimen/text_size_standard" />
         </LinearLayout>
 
         <!-- QUESTION 8 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_marginVertical="@dimen/margin_between_questions"
-            android:background="@color/colorQuestionBackground">
+            android:background="@color/colorQuestionBackground"
+            android:orientation="vertical">
 
             <!-- Header -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorTitleBackground"
-                android:textSize="@dimen/text_size_question"
-                android:text="@string/question_8"/>
+                android:text="@string/question_8"
+                android:textSize="@dimen/text_size_question" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/blink_dagger"
                 android:layout_gravity="center"
+                android:adjustViewBounds="true"
                 android:background="@color/colorTitleBackground"
                 android:padding="@dimen/image_padding"
-                android:adjustViewBounds="true"/>
+                android:src="@drawable/blink_dagger" />
 
             <!-- Question content -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size_standard"
-                android:text="@string/question_8_text"/>
+                android:text="@string/question_8_text"
+                android:textSize="@dimen/text_size_standard" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -500,23 +498,23 @@
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="getAnswer"
                     android:tag="@string/tag_answer_wrong"
-                    android:text="@string/question_8_wrong_1"
-                    android:onClick="getAnswer"/>
+                    android:text="@string/question_8_wrong_1" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="getAnswer"
                     android:tag="@string/tag_answer_correct"
-                    android:text="@string/question_8_correct"
-                    android:onClick="getAnswer"/>
+                    android:text="@string/question_8_correct" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="getAnswer"
                     android:tag="@string/tag_answer_wrong"
-                    android:text="@string/question_8_wrong_2"
-                    android:onClick="getAnswer"/>
+                    android:text="@string/question_8_wrong_2" />
             </RadioGroup>
         </LinearLayout>
 
@@ -524,9 +522,9 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/submit_answers"
-            android:background="@color/colorAccent"
             android:layout_margin="@dimen/margin_between_questions"
-            android:onClick="quizSummary"/>
+            android:background="@color/colorAccent"
+            android:onClick="quizSummary"
+            android:text="@string/submit_answers" />
     </LinearLayout>
 </ScrollView>
